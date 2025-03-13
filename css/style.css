@@ -164,30 +164,14 @@ nav a[href="#"] {
   text-align: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--hero-section-footer-bg);
+  border: 2px solid var(--hero-section-footer-bg);
+
   border-radius: 20px;
-  &:hover {
-    .advantages-title {
-      color: white;
-    }
-    .advantages-text {
-      color: white;
-    }
-    &::before {
-      visibility: hidden;
-    }
-  }
 }
 
-.advantages-item::before {
-  content: "hover me";
-
-  position: absolute;
-  visibility: visible;
-}
 .advantages-title {
-  /* color: var(--title-nav-h); */
-  color: transparent;
+  color: var(--title-nav-h);
+
   font-size: 14px;
   font-style: normal;
   transition: all 0.3s ease;
@@ -198,9 +182,8 @@ nav a[href="#"] {
 }
 
 .advantages-text {
-  color: transparent;
   padding-top: 10px;
-  /* color: var(--p-title); */
+  color: var(--p-title);
   transition: all 0.4s ease;
   font-size: 14px;
   font-style: normal;
